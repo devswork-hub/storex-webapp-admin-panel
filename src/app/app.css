@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+body {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+}
+
+@layer components {
+  .btn {
+    @apply flex justify-center items-center;
+    @apply px-4 py-2 rounded;
+  }
+
+  .btn-primary {
+    @apply bg-purple-300 text-white hover:bg-purple-700;
+  }
+
+  .btn-secondary {
+    @apply bg-green-300 text-white hover:bg-green-700;
+  }
+}
